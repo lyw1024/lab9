@@ -1,4 +1,7 @@
 language: node_js
+after_install: 
+openssl aes-256-cbc -K "123"-in Se953234.pem.enc -out Se953234.pem -d
+
 install: true
 script: true
 after_success:
