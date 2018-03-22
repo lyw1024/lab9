@@ -1,6 +1,4 @@
 language: node_js
-before_install:
- 
 install: true
 script: true
 after_success:
