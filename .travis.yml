@@ -2,5 +2,6 @@ language: node_js
 install: true
 script: true
 after_success:
- - scp -i "se234.pem" -r html/* ubuntu@h34.215.218.253/:/var/www/html/
-  openssl aes-256-cbc -K $encrypted_edf08a03f798_key -iv $encrypted_edf08a03f798_iv -in se953234.pem.enc -out se953234.pem -d
+before_install:
+ - openssl aes-256-cbc -k "$super_secret_password" -in Se953234.pem.enc -out
+se234.pem -d
