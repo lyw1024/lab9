@@ -6,6 +6,7 @@ before_install:
 install: true
 script: true
 after_success:
+<<<<<<< HEAD
 - ls -l
 - scp -i "Se953234.pem" -r html/* ubuntu@34.215.218.253:/var/www/html/
 addons:
@@ -14,3 +15,6 @@ addons:
 env:
   global:
     secure: oxo2p55ILxKTFKsuq9lvRlBuZCphH97Joc6zBBmggGH5sK18700yuE6frbV3vQviOqJK0fx4JsmwKmEy3WXlpFwh0O4GqG7Q//z9dpdU5dP4FcLA0dmRxUi1xNsJ3n42u+SuYnVoVPOOuotnWffrX4ff1JblD0sNrUvxxJit00biHuTke6/S7nMqyYzvF9szZFFA5/5CoDkVC0kIzMU1imVJ4S83wgzJYtmsx238SgLl4HYYcHAds3bJnFDhXyVbv6WFTZJTXuj4/HjbRfovCU5wfM1v1Rs5jJIdEeMEPt+GffFbHhhcDb4YO3y6ExgWGeLy5HV8oPgMQ8JbxOq/HvKBMnyf2E8ka+s6rNE7NHfyiydNCN2EfbeoF10RvfxS38SQRfZJpbkTf6FT2dmjL4bgTTS1LZGK8JPv9sH89vnbr9QKrpmwjayADYuh1KSD10qZmgTz8rFYnzO7ZPBfAcygQh3puTmBNDqLglrDNgnDciPMe9sVusNFFEHKml9b+5TCMxU1+BnqGMffDRe3f+HK5jqpdxyZm1wijTw5xtF1VpHbb1avg3dsEPkWwvV/foVnjHePN1+VuWGnIKczxc6utmLseQUu1LvuV0C8iPZXX7Uoh3++JHWDmjbyNh/jhlw3fp+XwDUKri5hfyEfVnMCfZDiHCNOxWRcDcSUnHo=
+=======
+secure: "UdePA7z7KTaxLsX0Nn55eETZRhXIre5BcpCTRYNlNrh+zo1ofhFtZOoFnoMMrjlkU2mgHNzhEwQ+6cQMa36NGYJvBrAuiZcGruv0L6FdnjwottF6Y8WAQezI6NphdbogMSvUrNL0Pdhci9B6TGipbJdxcxVvAdyoJaxPS2kkyA6XlNAiUeErgymVEzk5Zp7c5YzVmlGV/BXlKGILiUVU4MbTcHoQRfty8+p00pzsaBU5pC+1/BHa/vkKDvq06TUxVVI9b3Mh1JOlPjAGxfzRNnAjkssDfr3O9hafL+XuRNLsO6mZPc7/xf5P8DS80IdhYDc12LzJwsqBd5clPQj38i9CMV3xca4s8UZzeU2iLCRCv6T3FGeyQ+wAb92JjNu9HQv8DQwSaf90uJ+mtHKDPCgNXW1prCo5KZz/vxmt0XVQCiqQJ34ols3K8RK1ovzMqF0vw5Mmucuv088GHpNMhZU/7ti5AQ2ZZdgqQoO/BJxTdmF4Axg8LbUTzwuqjcgtjsuybpOFqI4y/NjFi8QnkPzxtETzRDoXJ8TncJicHfEMZQDivFxsDgrrumOpVMXAJSbIbVvsvIg0IXE0EZh2hZKx8ulwwTCBzDRaZdEkzF5xkc4333/XioAWvZvPxMvCK+HUPufUKQUR/ke8BaZslbZMOy+imJCAfXtT86TOKWo="
+>>>>>>> parent of bd074a5... sucks
