@@ -1,15 +1,5 @@
- tlanguage: node_js
-after_install: 
-openssl aes-256-cbc -K "123"-in Se953234.pem.enc -out Se953234.pem -d
-
+language: node_js
 install: true
 script: true
-addons:
-  ssh_known_hosts:
- - 34.215.218.253
 after_success:
-- ls -l
-- scp -i "Se953234.pem" -r html/* ubuntu@34.215.218.253/:/var/www/html/
-env:
-  global:
-    secure: "UdePA7z7KTaxLsX0Nn55eETZRhXIre5BcpCTRYNlNrh+zo1ofhFtZOoFnoMMrjlkU2mgHNzhEwQ+6cQMa36NGYJvBrAuiZcGruv0L6FdnjwottF6Y8WAQezI6NphdbogMSvUrNL0Pdhci9B6TGipbJdxcxVvAdyoJaxPS2kkyA6XlNAiUeErgymVEzk5Zp7c5YzVmlGV/BXlKGILiUVU4MbTcHoQRfty8+p00pzsaBU5pC+1/BHa/vkKDvq06TUxVVI9b3Mh1JOlPjAGxfzRNnAjkssDfr3O9hafL+XuRNLsO6mZPc7/xf5P8DS80IdhYDc12LzJwsqBd5clPQj38i9CMV3xca4s8UZzeU2iLCRCv6T3FGeyQ+wAb92JjNu9HQv8DQwSaf90uJ+mtHKDPCgNXW1prCo5KZz/vxmt0XVQCiqQJ34ols3K8RK1ovzMqF0vw5Mmucuv088GHpNMhZU/7ti5AQ2ZZdgqQoO/BJxTdmF4Axg8LbUTzwuqjcgtjsuybpOFqI4y/NjFi8QnkPzxtETzRDoXJ8TncJicHfEMZQDivFxsDgrrumOpVMXAJSbIbVvsvIg0IXE0EZh2hZKx8ulwwTCBzDRaZdEkzF5xkc4333/XioAWvZvPxMvCK+HUPufUKQUR/ke8BaZslbZMOy+imJCAfXtT86TOKWo="
+ - scp -i "se234.pem" -r html/* ubuntu@34.215.218.253/:/var/www/html/
