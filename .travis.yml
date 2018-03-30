@@ -6,12 +6,12 @@ install: true
 before_script:
 - export DOCKER_HOST="$HOST_NAME"
 script:
-- docker build -t $DOCKER_USERNAME/592115518/lab9
-- docker push $DOCKER_USERNAME/592115518/lab9
+- docker build -t $DOCKER_USERNAME/lab9 .
+- docker push $DOCKER_USERNAME/lab9
 after_success:
-- docker stop 592115518/lab9
-- docker rm 592115518/lab9
-- docker run -p 8088:80 -d --name 592115518/lab9 $DOCKER_USERNAME/592115518/lab9:latest
+- docker stop $DOCKER_USERNAME/lab9
+- docker rm $DOCKER_USERNAME/lab9
+- docker run -p 8088:80 -d --name lab9 $DOCKER_USERNAME/lab9:latest
 service: docker
 env:
   global:
